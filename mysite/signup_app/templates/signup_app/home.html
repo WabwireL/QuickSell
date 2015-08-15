@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <style>
+        body {background-color:#B8E3E8;
+        	text-align: center;
+        }
+        h1 {font-size: 200%;
+        	font-family:Jokerman;
+        }
+        form{font-size: 50%;
+            font-family:Calibri;
+            margin-top:100px;
+             }
+        </style>
+        </head>
+            <body>
+                <h1>Welcome to QuickSell<h1>
+                <form method= 'GET' action='http://127.0.0.1:8000/register/'>{%csrf_token%}
+                {{form.as_p}}
+                <input type='submit' value = "login" >
+                or <a href="http://127.0.0.1:8000/register/">create an account</a>
+                </form>
+
+            </body>
+        
+    </html>
