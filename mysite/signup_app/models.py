@@ -1,10 +1,10 @@
 from django.db import models
-from phonenumber_field.modelfields import PhoneNumberField
+
 class signup(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     date_of_birth=models.CharField(max_length=50)
-    phone_number = models.PhoneNumberField()
+    phone_number = models.CharField(max_length=100)
     country = models.CharField(max_length=30)
     city=models.CharField(max_length=30)
     address=models.CharField(max_length=100)
